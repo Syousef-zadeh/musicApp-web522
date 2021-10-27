@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "syousef-zadeh-wa-web524-a6.scm.azurewebsites.net:443"
+    }
+  }
+}

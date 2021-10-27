@@ -1,0 +1,75 @@
+﻿@model Assignment_6.Models.Tracks.TrackBaseViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Track details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <hr />
+        <dt>
+            @Html.DisplayNameFor(model => model.ClipUrl)
+        </dt>
+
+        <dd>
+            @{ var alt = $"{Model.Name} "; }
+            <audio src="/clip/@Model.Id" controls="controls"></audio>
+        </dd>
+        <hr />
+        <dt>
+            @Html.DisplayNameFor(model => model.Composers)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Composers)
+        </dd>
+
+        <hr />
+        <dt hidden>
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+
+        <dd hidden>
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+
+        <dt hidden>
+            @Html.DisplayNameFor(model => model.Clerk)
+        </dt>
+
+        <dd hidden>
+            @Html.DisplayFor(model => model.Clerk)
+        </dd>
+
+        <dt hidden>
+            @Html.DisplayNameFor(model => model.AlbumId)
+        </dt>
+
+        <dd hidden>
+            @Html.DisplayFor(model => model.AlbumId)
+        </dd>
+
+        <dt hidden>
+            @Html.DisplayNameFor(model => model.ArtistMediaItemId)
+        </dt>
+
+        <dd hidden>
+            @Html.DisplayFor(model => model.ArtistMediaItemId)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

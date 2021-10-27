@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Assignment_6.EntityModels.Album">
+    <Position X="4.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAEAIAAAAAEIAAAQAAAAAAAAAQEAAAAAAAAA=</HashCode>
+      <FileName>EntityModels\Album.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Artists" />
+      <Property Name="Tracks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Assignment_6.EntityModels.Artist">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAADAAAAQAIAAAQIAAAAAAAAAAAACAAEAEA=</HashCode>
+      <FileName>EntityModels\Artist.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Albums" />
+      <Property Name="ArtistMediaItem" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Assignment_6.EntityModels.Genre">
+    <Position X="9" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EntityModels\Genre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment_6.EntityModels.RoleClaim">
+    <Position X="9" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EntityModels\RoleClaim.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment_6.EntityModels.Track">
+    <Position X="2" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAIAAAQAAAAAAAAAAAAACEQEAAA=</HashCode>
+      <FileName>EntityModels\Track.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Albums" />
+      <Property Name="ArtistMediaItem" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Assignment_6.EntityModels.ArtistMediaItem">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EntityModels\ArtistMediaItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

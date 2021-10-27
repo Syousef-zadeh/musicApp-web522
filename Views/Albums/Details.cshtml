@@ -1,0 +1,67 @@
+﻿@model Assignment_6.Models.Albums.AlbumBaseViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Album details - @Html.DisplayFor(model => model.Name)</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <hr />
+        <dt>
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+        <hr />
+        <dt>
+            @Html.DisplayNameFor(model => model.UrlAlbum)
+        </dt>
+
+        <dd>
+            <img src="@Url.Content(Model.UrlAlbum)" style="width: 150px" />
+        </dd>
+        <hr />
+        <dt>
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+        <hr />
+        <dt hidden>
+            @Html.DisplayNameFor(model => model.Coordinator)
+        </dt>
+
+        <dd hidden>
+            @Html.DisplayFor(model => model.Coordinator)
+        </dd>
+        <hr />
+        <dt>
+            @Html.DisplayNameFor(model => model.Summary)
+        </dt>
+
+        <dd class="body-content table-bordered">
+            @Html.Raw(Model.Summary)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    
+    @Html.ActionLink("Back to List", "Index") |
+    @Html.ActionLink("Add track to this album", "AddTrack", new { id = Model.Id }) 
+
+</p>
